@@ -1,0 +1,38 @@
+.firmContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  width: 100%;
+  text-align: center;
+  height: 35px;
+  color: white;
+}
+
+.firmContainer > p {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.logosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.DHlogo {
+  width: 250px;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  color: black;
+  font-size: 30px;
+}

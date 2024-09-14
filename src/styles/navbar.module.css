@@ -1,0 +1,46 @@
+.darkTheme {
+  color: white;
+  background: #000;
+}
+
+.darkTheme > div > a {
+  color: white;
+}
+
+.pNavbar {
+  margin: 5px;
+}
+
+p > span {
+  color: red;
+}
+
+.button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buttonLight {
+  background: black;
+}
+
+.buttonDark {
+  background: gray;
+}
+
+.button:hover {
+  background: #252525;
+  cursor: pointer;
+}
+
+.moonIcon {
+  color: #fbb917;
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
