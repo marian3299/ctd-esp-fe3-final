@@ -7,6 +7,16 @@ import { useContextGlobal } from "../Context";
 const Card = ({ odont }) => {
   const { dispatch, state } = useContextGlobal();
 
+  const addFav = () => {
+    const findedFav = state.data.favs.find((fav) => fav.id === odont.id);
+
+    if (findedFav) {
+      alert("Elemento ya esta en favs");
+    } else {
+      dispatch({ type: "ADD_FAVS", payload: odont });
+    }
+  };
+
   const { id, name, username } = odont;
 
   return (
@@ -20,10 +30,7 @@ const Card = ({ odont }) => {
         <p className={CardStyles.id}>{id}</p>
       </Link>
       {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-      <button
-        onClick={() => dispatch({ type: "ADD_FAVS", payload: odont })}
-        className="favButton"
-      >
+      <button onClick={addFav} className="favButton">
         <IoMdStar className={CardStyles.favIcon} />
       </button>
     </div>
